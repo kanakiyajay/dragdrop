@@ -9,29 +9,82 @@
 <body>
     <div class="container-fluid">
         <div class="row-fluid">
+            <div class="span3">
+                <h3>Drag Area</h3>
+            </div>
+            <div class="span9">
+                <h3>Drop Area</h3>
+            </div>
+        </div>
+        <div class="row-fluid">
             <div class="span3" id="drag-column">
             <!--Drag Widgets-->
 
-                        <div class="drag-widget"></div>
-                        <div class="drag-widget"></div>
-                        <div class="drag-widget"></div>
-                        <div class="drag-widget"></div>
-                        <div class="drag-widget"></div>
+
+                        <div class="drag-widget">
+                            <div class="iconcontainer">
+                                <i class="icon-beer">button-group</i>
+                            </div>
+                            <div class="btn-group">
+                              <button class="btn">1</button>
+                              <button class="btn">2</button>
+                              <button class="btn">3</button>
+                            </div>
+                        </div>
+                        <div class="drag-widget">
+                            <ul class="nav nav-tabs">
+                              <li class="active">
+                                <a href="#">Home</a>
+                              </li>
+                              <li><a href="#">...</a></li>
+                              <li><a href="#">...</a></li>
+                            </ul>
+                        </div>
+                        <div class="drag-widget">
+                            <ul class="nav nav-list">
+                              <li class="nav-header">List header</li>
+                              <li class="active"><a href="#">Home</a></li>
+                              <li><a href="#">Library</a></li>
+                            </ul>
+                        </div>
+                        <div class="drag-widget">
+                            <div class="tabbable"> <!-- Only required for left/right tabs -->
+                              <ul class="nav nav-tabs">
+                                <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+                                <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+                              </ul>
+                              <div class="tab-content">
+                                <div class="tab-pane active" id="tab1">
+                                  <p>I'm in Section 1.</p>
+                                </div>
+                                <div class="tab-pane" id="tab2">
+                                  <p>Howdy, I'm in Section 2.</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="drag-widget">
+                            <div class="navbar">
+                              <div class="navbar-inner">
+                                <a class="brand" href="#">Title</a>
+                                <ul class="nav">
+                                  <li class="active"><a href="#">Home</a></li>
+                                  <li><a href="#">Link</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                        </div>
 
             </div>
             <!--DROP AREA-->
-            <div class="span9 offset2" id="drop-column">
-                    <div class="drag-widget"></div>
-                    <div class="drag-widget"></div>
-                    <div class="drag-widget"></div>
-                    <div class="drag-widget"></div>
+            <div class="span9 " id="drop-column">
                     <div class="drag-widget"></div>
             </div>
 
             <div id="delete-container">
-                <i class="icon-trash icon-large"></i> Delete</a>
+                <h4><i class="icon-trash icon-large"></i>Delete Area</h4>
                 <div id="delete-column">
-                    <div class="drag-widget"></div>
+
                 </div>
             </div>
 
@@ -43,5 +96,6 @@
     <script src="js/jquery.shapeshift.min.js"></script>
     <script src="js/holder.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/destroy.js"></script>
 </body>
 </html>

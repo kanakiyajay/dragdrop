@@ -10,13 +10,23 @@ body{
     right: 0;
     width: 200px;
     height: 200px;
+    border: 2px dotted black;
 }
-#delete-column{
-    opacity: 0.1
+#delete-container:hover{
+    background: rgba(200,200,200,0.6);
+    border: 2px dotted lightblue;
 }
 .drag-widget{
     position: absolute;
-    background: #ccc;
+    background: rgba(200,200,200,0.6);
     height: 100px;
     width: 180px;
+}
+.drag-widget > div{
+    display: block;
+    width: 100%;
+}
+.drag-widget .ss-moving {
+  opacity: .7;
+  transform: rotate(3deg);
 }

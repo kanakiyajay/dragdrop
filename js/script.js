@@ -6,7 +6,7 @@ $(document).ready(function  () {
           enableAnimationOnInit: true,
           enableAutoHeight: false,
           enableDrag: true,
-          enableDragAnimation: true,
+          enableDragAnimation: false,
           enableRearrange: true,
           enableResize: true,
           enableTrash: false,
@@ -26,6 +26,8 @@ $(document).ready(function  () {
           paddingX: 0,
           selector: ""
         });
-        $('#drop-column').shapeshift();
-        $('#delete-column').shapeshift();
+        $('#drop-column').shapeshift({
+          enableDragAnimation: false
+        });
+        $('#delete-column').shapeshift({enableTrash:true});
 });
