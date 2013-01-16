@@ -1,0 +1,22 @@
+body{
+    overflow: hidden;
+}
+#drag-column,#drop-column,#delete-column{
+    position: relative;
+}
+#delete-container{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+}
+#delete-column{
+    opacity: 0.1
+}
+.drag-widget{
+    position: absolute;
+    background: #ccc;
+    height: 100px;
+    width: 180px;
+}
